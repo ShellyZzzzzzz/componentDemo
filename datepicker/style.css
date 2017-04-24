@@ -1,0 +1,44 @@
+body {
+	font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+	font-size: 14px;
+	color: #48576a;
+}
+.ui-datepicker-input {
+	width: 210px;
+	height: 20px;
+}
+
+.ui-datepicker-wrapper {
+	width: 200px;
+	padding: 5px;
+	box-shadow: 2px 2px 8px 2px #ddd;
+	text-align: center;
+}
+
+.ui-datepicker-header {
+	height: 18px;
+	padding: 4px;
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.ui-datepicker-btn {
+	text-decoration: none;
+}
+
+.ui-datepicker-prev-btn {
+	float: left;
+}
+
+.ui-datepicker-next-btn {
+	float: right;
+}
+
+.ui-datepicker-body th {
+	font-weight: bold;
+}
+
+.ui-datepicker-body td{
+	width: 25px;
+	cursor: pointer;
+}
