@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    font-size: 12px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.ui-tab-wrapper {
+    width: 300px;
+}
+
+.ui-tab-wrapper .ui-tab-nav {
+    height: 30px;
+}
+
+.ui-tab-wrapper .ui-tab-nav li {
+    float: left;
+    margin-right: 5px;
+    background-color: #20A0FF;
+    border-radius: 3px 3px 0 0;
+}
+
+.ui-tab-wrapper .ui-tab-nav li a {
+    display: block;
+    height: 30px;
+    padding: 0 20px;
+    color: #fff;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.ui-tab-content {
+    
+}
