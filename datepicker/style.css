@@ -1,7 +1,7 @@
 body {
 	font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 	font-size: 14px;
-	color: #48576a;
+	color: #475669;
 }
 .ui-datepicker-input {
 	width: 210px;
@@ -9,10 +9,16 @@ body {
 }
 
 .ui-datepicker-wrapper {
+	position: absolute;
+	display: none;
 	width: 200px;
 	padding: 5px;
-	box-shadow: 2px 2px 8px 2px #ddd;
+	box-shadow: 2px 2px 8px 2px #D3DCE6;
 	text-align: center;
+}
+
+.ui-datepicker-wrapper-show {
+	display: block;
 }
 
 .ui-datepicker-header {
@@ -23,7 +29,9 @@ body {
 }
 
 .ui-datepicker-btn {
+	color: #475669;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .ui-datepicker-prev-btn {
@@ -34,6 +42,10 @@ body {
 	float: right;
 }
 
+.ui-datepicker-body {
+	border-top: 1px solid #D3DCE6;
+}
+
 .ui-datepicker-body th {
 	font-weight: bold;
 }
@@ -41,4 +53,8 @@ body {
 .ui-datepicker-body td{
 	width: 25px;
 	cursor: pointer;
+}
+
+.ui-datepicker-body .not-this-month-day {
+	color: #99A9BF;
 }
