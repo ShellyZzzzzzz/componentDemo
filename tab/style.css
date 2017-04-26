@@ -6,6 +6,7 @@
 body {
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
     font-size: 12px;
+    background-color: #1F2D3D;
 }
 
 ul, li {
@@ -13,7 +14,7 @@ ul, li {
 }
 
 .ui-tab-wrapper {
-    width: 300px;
+    width: 620px;
 }
 
 .ui-tab-wrapper .ui-tab-nav {
@@ -23,7 +24,12 @@ ul, li {
 .ui-tab-wrapper .ui-tab-nav li {
     float: left;
     margin-right: 5px;
-    background-color: #20A0FF;
+    background-color: #58B7FF;
+    border-radius: 3px 3px 0 0;
+}
+
+.ui-tab-wrapper .ui-tab-nav li.active {
+    background-color: #F9FAFC;
     border-radius: 3px 3px 0 0;
 }
 
@@ -36,6 +42,20 @@ ul, li {
     text-decoration: none;
 }
 
+.ui-tab-wrapper .ui-tab-nav li.active a {
+    color: #58B7FF;
+}
+
 .ui-tab-content {
-    
+    height: 620px;
+    padding: 10px;
+    background-color: #F9FAFC;
+}
+
+.ui-tab-content-item {
+    display: none;
+}
+
+.ui-tab-content-item.active {
+    display: block;
 }
