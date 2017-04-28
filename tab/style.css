@@ -53,6 +53,7 @@ ul, li {
 }
 
 .ui-tab-content-item {
+    position: absolute;
     display: none;
 }
 

@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>tab</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="../jquery.min.js"></script>
 </head>
 <body>
-    <div class="ui-tab-wrapper">
+    <div class="ui-tab-wrapper" id="J_tab">
         <!-- 标签导航区域 start -->
         <ul class="ui-tab-nav">
             <li class="active"><a href="#">第一个tab</a></li>
@@ -28,6 +29,16 @@
         </div>
         <!-- 标签内容区域 end -->
     </div>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="tab.js"></script>
+    <script>
+        $(function() {
+            var tab1 = new Tab(document.querySelector('#J_tab'), {
+                triggerType: 'mouseover', // 触发事件
+                effect: 'fade', // 切换效果
+                active: 2, // 默认选中
+                auto: 5000 // 自动切换时间
+            });
+        });
+    </script>
 </body>
 </html>
