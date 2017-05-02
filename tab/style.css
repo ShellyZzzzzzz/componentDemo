@@ -5,8 +5,7 @@
 
 body {
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
-    font-size: 12px;
-    background-color: #1F2D3D;
+    font-size: 14px;
 }
 
 ul, li {
@@ -14,43 +13,46 @@ ul, li {
 }
 
 .ui-tab-wrapper {
-    margin: 0 auto;
+    margin: 10px auto;
     width: 620px;
 }
 
 .ui-tab-wrapper .ui-tab-nav {
-    height: 30px;
+    height: 40px;
+    z-index: 1
 }
 
 .ui-tab-wrapper .ui-tab-nav li {
+    position: relative;
     float: left;
-    margin-right: 5px;
-    background-color: #58B7FF;
-    border-radius: 3px 3px 0 0;
+    border-radius: 5px 5px 0 0;
 }
 
 .ui-tab-wrapper .ui-tab-nav li.active {
-    background-color: #F9FAFC;
-    border-radius: 3px 3px 0 0;
+    border: 1px solid #d1dbe5;
+    border-bottom-color: #fff;
+    z-index: 100;
 }
 
 .ui-tab-wrapper .ui-tab-nav li a {
     display: block;
-    height: 30px;
+    height: 40px;
     padding: 0 20px;
-    color: #fff;
-    line-height: 30px;
+    color: #8391a5;
+    line-height: 40px;
     text-decoration: none;
 }
 
 .ui-tab-wrapper .ui-tab-nav li.active a {
-    color: #58B7FF;
+    color: #20a0ff;
 }
 
 .ui-tab-content {
+    position: relative;
+    top: 1px;
     height: 620px;
     padding: 10px;
-    background-color: #F9FAFC;
+    border: 1px solid #d1dbe5;
 }
 
 .ui-tab-content-item {
